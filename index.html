@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Файлообменник</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Файлообменник</h1>
+    <div class="123">
+        <p>Загрузка файла</p>
+        <form>
+            <input type="file" id="fileInput">
+            <button type="button" onclick="uploadFile()">Загрузить</button>
+        </form>
+        <form id="fileUploadForm" enctype="multipart/form-data">
+            <select id="sortOption">
+                <option value="name">По имени</option>
+                <option value="date">По дате</option>
+                <option value="size">По размеру</option>
+                <option value="user">По имени пользователя</option>      
+            </select>
+            <button onclick="sortFiles()">Сортировать</button>
+        </form>
+
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
